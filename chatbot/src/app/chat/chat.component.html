@@ -1,0 +1,25 @@
+<div class="chat-container">
+  <div class="chat-history" id="chatHistory">
+    <app-message
+      *ngFor="let message of messages"
+      [isUser]="isSenderUser(message.sender)"
+      [text]="message.content"
+    ></app-message>
+    <app-message
+      *ngIf="!inputActive"
+      [isUser]="false"
+      [text]="'Typing...'"
+    ></app-message>
+  </div>
+  <div class="chat-input">
+    <input
+      [disabled]="!inputActive"
+      [(ngModel)]="newMessage"
+      (keyup.enter)="sendMessage()"
+      placeholder="Type your message here...">
+    <button
+      [disabled]="!inputActive || newMessage === ''"
+      (click)="sendMessage()"
+    >Send</button>
+  </div>
+</div>

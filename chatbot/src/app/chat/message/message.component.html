@@ -1,0 +1,8 @@
+<div class="message-container"
+     [ngClass]="{'user': isUser, 'chatbot': !isUser}">
+  <div
+    class="message"
+    [ngClass]="{'user-message': isUser, 'chatbot-message': !isUser}">
+    {{ this.text }}
+  </div>
+</div>
