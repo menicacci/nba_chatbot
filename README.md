@@ -1,1 +1,1 @@
-# qag
+# NBA AI Chabot using RAG
