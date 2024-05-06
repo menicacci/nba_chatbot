@@ -1,0 +1,192 @@
+Table:
+CREATE TABLE "game" (
+"season_id" TEXT,
+  "team_id_home" TEXT,
+  "team_abbreviation_home" TEXT,
+  "team_name_home" TEXT,
+  "game_id" TEXT,
+  "game_date" TIMESTAMP,
+  "matchup_home" TEXT,
+  "wl_home" TEXT,
+  "min" INTEGER,
+  "fgm_home" REAL,
+  "fga_home" REAL,
+  "fg_pct_home" REAL,
+  "fg3m_home" REAL,
+  "fg3a_home" REAL,
+  "fg3_pct_home" REAL,
+  "ftm_home" REAL,
+  "fta_home" REAL,
+  "ft_pct_home" REAL,
+  "oreb_home" REAL,
+  "dreb_home" REAL,
+  "reb_home" REAL,
+  "ast_home" REAL,
+  "stl_home" REAL,
+  "blk_home" REAL,
+  "tov_home" REAL,
+  "pf_home" REAL,
+  "pts_home" REAL,
+  "plus_minus_home" INTEGER,
+  "video_available_home" INTEGER,
+  "team_id_away" TEXT,
+  "team_abbreviation_away" TEXT,
+  "team_name_away" TEXT,
+  "matchup_away" TEXT,
+  "wl_away" TEXT,
+  "fgm_away" REAL,
+  "fga_away" REAL,
+  "fg_pct_away" REAL,
+  "fg3m_away" REAL,
+  "fg3a_away" REAL,
+  "fg3_pct_away" REAL,
+  "ftm_away" REAL,
+  "fta_away" REAL,
+  "ft_pct_away" REAL,
+  "oreb_away" REAL,
+  "dreb_away" REAL,
+  "reb_away" REAL,
+  "ast_away" REAL,
+  "stl_away" REAL,
+  "blk_away" REAL,
+  "tov_away" REAL,
+  "pf_away" REAL,
+  "pts_away" REAL,
+  "plus_minus_away" INTEGER,
+  "video_available_away" INTEGER,
+  "season_type" TEXT
+)
+Examples:
+('21986', '1610612741', 'CHI', 'Chicago Bulls', '0028600315', '1986-12-27 00:00:00', 'CHI vs. IND', 'W', 240, 44.0, 81.0, 0.543, 0.0, 2.0, 0.0, 17.0, 28.0, 0.607, 14.0, 35.0, 49.0, 35.0, 4.0, 5.0, 18.0, 22.0, 105.0, 12, 0, '1610612754', 'IND', 'Indiana Pacers', 'IND @ CHI', 'L', 37.0, 87.0, 0.425, 0.0, 2.0, 0.0, 19.0, 27.0, 0.704, 12.0, 24.0, 36.0, 22.0, 10.0, 1.0, 12.0, 23.0, 93.0, -12, 0, 'Regular Season')
+('21992', '1610612760', 'SEA', 'Seattle SuperSonics', '0029200101', '1992-11-21 00:00:00', 'SEA vs. DET', 'W', 240, 51.0, 88.0, 0.58, 6.0, 9.0, 0.667, 30.0, 41.0, 0.732, 13.0, 36.0, 49.0, 24.0, 10.0, 7.0, 15.0, 22.0, 138.0, 37, 0, '1610612765', 'DET', 'Detroit Pistons', 'DET @ SEA', 'L', 44.0, 104.0, 0.423, 2.0, 7.0, 0.286, 11.0, 15.0, 0.733, 19.0, 27.0, 46.0, 18.0, 7.0, 2.0, 14.0, 29.0, 101.0, -37, 0, 'Regular Season')
+
+Table:
+CREATE TABLE "game_info" (
+"game_id" TEXT,
+  "game_date" TIMESTAMP,
+  "attendance" INTEGER,
+  "game_time" TEXT
+)
+Examples:
+('0020900176', '2009-11-20 00:00:00', 16674, '2:26')
+('0040800225', '2009-05-12 00:00:00', 18997, '2:25')
+
+Table:
+CREATE TABLE "player" (
+"id" TEXT,
+  "full_name" TEXT,
+  "first_name" TEXT,
+  "last_name" TEXT,
+  "is_active" INTEGER
+)
+Examples:
+('77395', 'Lewis Lloyd', 'Lewis', 'Lloyd', 0)
+('1631217', 'Moussa Diabate', 'Moussa', 'Diabate', 1)
+
+Table:
+CREATE TABLE "team" (
+"id" TEXT,
+  "full_name" TEXT,
+  "abbreviation" TEXT,
+  "nickname" TEXT,
+  "city" TEXT,
+  "state" TEXT,
+  "year_founded" REAL
+)
+Examples:
+('1610612740', 'New Orleans Pelicans', 'NOP', 'Pelicans', 'New Orleans', 'Louisiana', 2002.0)
+('1610612757', 'Portland Trail Blazers', 'POR', 'Trail Blazers', 'Portland', 'Oregon', 1970.0)
+
+Table:
+CREATE TABLE "common_player_info" (
+"person_id" TEXT,
+  "first_name" TEXT,
+  "last_name" TEXT,
+  "display_first_last" TEXT,
+  "display_last_comma_first" TEXT,
+  "display_fi_last" TEXT,
+  "player_slug" TEXT,
+  "birthdate" TIMESTAMP,
+  "school" TEXT,
+  "country" TEXT,
+  "last_affiliation" TEXT,
+  "height" TEXT,
+  "weight" TEXT,
+  "season_exp" REAL,
+  "jersey" TEXT,
+  "position" TEXT,
+  "rosterstatus" TEXT,
+  "games_played_current_season_flag" TEXT,
+  "team_id" INTEGER,
+  "team_name" TEXT,
+  "team_abbreviation" TEXT,
+  "team_code" TEXT,
+  "team_city" TEXT,
+  "playercode" TEXT,
+  "from_year" REAL,
+  "to_year" REAL,
+  "dleague_flag" TEXT,
+  "nba_flag" TEXT,
+  "games_played_flag" TEXT,
+  "draft_year" TEXT,
+  "draft_round" TEXT,
+  "draft_number" TEXT,
+  "greatest_75_flag" TEXT
+)
+Examples:
+('78549', 'Gus', 'Williams', 'Gus Williams', 'Williams, Gus', 'G. Williams', 'gus-williams', '1953-10-10 00:00:00', 'Southern California', 'USA', 'Southern California/USA', '6-2', '175', 11.0, '1', 'Guard', 'Inactive', 'N', 1610612760, 'SuperSonics', 'SEA', 'thunder', 'Seattle', 'HISTADD_gus_williams', 1975.0, 1986.0, 'N', 'Y', 'Y', '1975', '2', '20', 'N')
+('2407', 'Jared', 'Jeffries', 'Jared Jeffries', 'Jeffries, Jared', 'J. Jeffries', 'jared-jeffries', '1981-11-25 00:00:00', 'Indiana', 'USA', 'Indiana/USA', '6-11', '240', 12.0, '1', 'Forward', 'Inactive', 'N', 1610612752, 'Knicks', 'NYK', 'knicks', 'New York', 'jared_jeffries', 2002.0, 2012.0, 'N', 'Y', 'Y', '2002', '1', '11', 'N')
+
+Table:
+CREATE TABLE "team_details" (
+"team_id" TEXT,
+  "abbreviation" TEXT,
+  "nickname" TEXT,
+  "yearfounded" REAL,
+  "city" TEXT,
+  "arena" TEXT,
+  "arenacapacity" REAL,
+  "owner" TEXT,
+  "generalmanager" TEXT,
+  "headcoach" TEXT,
+  "dleagueaffiliation" TEXT,
+  "facebook" TEXT,
+  "instagram" TEXT,
+  "twitter" TEXT
+)
+Examples:
+('1610612745', 'HOU', 'Rockets', 1967.0, 'Houston', 'Toyota Center', 18104.0, 'Tilman Fertitta', 'Rafael Stone', 'Ime Udoka', 'Rio Grande Valley Vipers', 'https://www.facebook.com/houstonrockets', 'https://instagram.com/houstonrockets', 'https://twitter.com/HoustonRockets')
+('1610612753', 'ORL', 'Magic', 1989.0, 'Orlando', 'Amway Center', 0.0, 'Dan DeVos', 'John Hammond', 'Jamahl Mosley', 'Lakeland Magic', 'https://www.facebook.com/OrlandoMagic', 'https://instagram.com/orlandomagic', 'https://twitter.com/OrlandoMagic')
+
+Table:
+CREATE TABLE "team_history" (
+"team_id" TEXT,
+  "city" TEXT,
+  "nickname" TEXT,
+  "year_founded" INTEGER,
+  "year_active_till" INTEGER
+)
+Examples:
+('1610612756', 'Phoenix', 'Suns', 1968, 2019)
+('1610612742', 'Dallas', 'Mavericks', 1980, 2019)
+
+Table:
+CREATE TABLE "draft_history" (
+"person_id" TEXT,
+  "player_name" TEXT,
+  "season" TEXT,
+  "round_number" INTEGER,
+  "round_pick" INTEGER,
+  "overall_pick" INTEGER,
+  "draft_type" TEXT,
+  "team_id" TEXT,
+  "team_city" TEXT,
+  "team_name" TEXT,
+  "team_abbreviation" TEXT,
+  "organization" TEXT,
+  "organization_type" TEXT,
+  "player_profile_flag" TEXT
+)
+Examples:
+('78367', 'John Trapp', '1968', 2, 1, 15, 'Draft', '1610612745', 'San Diego', 'Rockets', 'SDR', 'Nevada-Las Vegas', 'College/University', '1')
+('79321', 'Larry Killick', '1947', 1, 10, 10, 'Draft', '1610610024', 'Baltimore', 'Bullets', 'BAL', 'Vermont', 'College/University', '0')

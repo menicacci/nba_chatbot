@@ -1,0 +1,74 @@
+Table:
+CREATE TABLE "player_box_score" (
+"Unnamed: 0" INTEGER,
+  "Season" INTEGER,
+  "Game_ID" INTEGER,
+  "PLAYER_NAME" TEXT,
+  "Team" TEXT,
+  "GAME_DATE" TEXT,
+  "MATCHUP" TEXT,
+  "WL" TEXT,
+  "MIN" INTEGER,
+  "FGM" INTEGER,
+  "FGA" REAL,
+  "FG_PCT" REAL,
+  "FG3M" REAL,
+  "FG3A" REAL,
+  "FG3_PCT" REAL,
+  "FTM" INTEGER,
+  "FTA" REAL,
+  "FT_PCT" REAL,
+  "OREB" REAL,
+  "DREB" REAL,
+  "REB" REAL,
+  "AST" REAL,
+  "STL" REAL,
+  "BLK" REAL,
+  "TOV" REAL,
+  "PF" REAL,
+  "PTS" INTEGER,
+  "PLUS_MINUS" REAL,
+  "VIDEO_AVAILABLE" INTEGER
+)
+Examples:
+(1049279, 2004, 20300729, 'Kareem Rush', 'LAL', 'FEB 08, 2004', 'LAL @ ORL', 'W', 35, 8, 13.0, 0.615, 0.0, 2.0, 0.0, 1, 2.0, 0.5, 0.0, 1.0, 1.0, 0.0, 3.0, 1.0, 1.0, 3.0, 17, 11.0, 0)
+(880780, 2022, 22100612, 'Raul Neto', 'WAS', 'JAN 11, 2022', 'WAS vs. OKC', 'W', 19, 1, 5.0, 0.2, 0.0, 2.0, 0.0, 0, 0.0, 0.0, 0.0, 5.0, 5.0, 5.0, 0.0, 0.0, 2.0, 2.0, 2, -5.0, 1)
+
+Table:
+CREATE TABLE "player_stats" (
+"Unnamed: 0" INTEGER,
+  "Season" INTEGER,
+  "Player" TEXT,
+  "Pos" TEXT,
+  "Age" TEXT,
+  "Tm" TEXT,
+  "G" TEXT,
+  "GS" TEXT,
+  "MP" TEXT,
+  "FG" TEXT,
+  "FGA" TEXT,
+  "FG%" TEXT,
+  "3P" TEXT,
+  "3PA" TEXT,
+  "3P%" TEXT,
+  "2P" TEXT,
+  "2PA" TEXT,
+  "2P%" TEXT,
+  "eFG%" TEXT,
+  "FT" TEXT,
+  "FTA" TEXT,
+  "FT%" TEXT,
+  "ORB" TEXT,
+  "DRB" TEXT,
+  "TRB" TEXT,
+  "AST" TEXT,
+  "STL" TEXT,
+  "BLK" TEXT,
+  "TOV" TEXT,
+  "PF" TEXT,
+  "PTS" TEXT
+)
+Examples:
+(197, 1990, 'Marques Johnson', 'SF', '33.0', 'GSW', '10.0', '0.0', '99.0', '12.0', '32.0', '0.375', '2.0', '3.0', '0.667', '10.0', '29.0', '0.345', '0.406', '14.0', '17.0', '0.824', '8.0', '9.0', '17.0', '9.0', '0.0', '1.0', '10.0', '12.0', '40.0')
+(821, 2022, 'Dylan Windler', 'SF', '25.0', 'CLE', '50.0', '0.0', '459.0', '37.0', '98.0', '0.378', '21.0', '70.0', '0.3', '16.0', '28.0', '0.571', '0.485', '15.0', '18.0', '0.833', '21.0', '68.0', '89.0', '34.0', '14.0', '3.0', '16.0', '47.0', '110.0')
+
