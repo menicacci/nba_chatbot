@@ -15,7 +15,7 @@ def execute(data_path: str, command: str):
 
 def get_query_output(data_path: str, command: str):
     # Check if the command is a valid selection query
-    if not sql_command.strip().lower().startswith("select"):
+    if not command.strip().lower().startswith("select"):
         return False
     
     try:
