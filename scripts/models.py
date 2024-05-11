@@ -62,16 +62,17 @@ def get_sql_query(model, tokenizer, prompt):
 def get_llm(model_path: str):
     return Llama(
       model_path=model_path,
-      # n_gpu_layers=,
-      # seed=,
-      # n_ctx=
+      n_gpu_layers=-1,
+      n_batch=512,
+      n_threads=2,
+      verbose=True
 )
 
 
 def get_llm_response(llm, prompt):
     return llm(
         prompt,
-        max_tokens=6000, 
-        stop=["Q:", "\n"], 
+        max_tokens=256,
+        temperature=0.2,
         echo=True
     )["choices"][0]['text'][len(prompt):]
