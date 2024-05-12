@@ -1,8 +1,16 @@
 import os
 import torch
-from transformers import AutoTokenizer,AutoModelForCausalLM
 import sqlparse
+from transformers import AutoTokenizer,AutoModelForCausalLM
 from llama_cpp import Llama
+
+
+def format_llm_prompt(prompt_structure, retrieved_context, question):
+    return prompt_structure.format(context=retrieved_context, question=question)
+
+
+def format_sql_prompt(prompt_structure, schema, question):
+    return prompt_structure.format(schema=schema, question=question)
 
 
 def set_up_coder(save_dir: str):
