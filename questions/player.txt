@@ -1,0 +1,40 @@
+Who is the player with the most rebounds in a season?
+Who is the player with the most assists in a season?
+Show me the 10 best performances in terms of points scored in a single game.
+Show me the top 5 players of the 2021 season in terms of average rebounds per game.
+Show me the top 5 players of the 2020 season in terms of points per game.
+Who is the player that scored the most points during the 2017 season and how many points did he score overall?
+Who is the player that scored the most points in a game during the 2019 season and in which game (when and against whom)?
+Show me the players who have played the most games in a single season.
+Who has the highest field goal percentage in a single game?
+Who has the highest three-point field goal percentage in a single game?
+Show me the player who played the most minutes in a single game.
+Who is the oldest player to achieve a double-double in a single game?
+Show me the player with the most steals in a single game.
+Show me the player with the most blocks in a single game.
+Show me the player with the highest plus-minus in a single game.
+Who is the player with the highest free throw percentage in a single game?
+Show me the player who has the most double-doubles in a single season.
+Who is the youngest player to achieve a triple-double in a single game?
+Show me the player with the highest average points per game in their career.
+Show me the player with the highest average assists per game in their career.
+Show me the player with the highest average rebounds per game in their career.
+Who is the player with the most triple-doubles in their career?
+Who is the player with the highest career field goal percentage?
+Who is the player with the highest career three-point field goal percentage?
+Who is the player with the highest career free throw percentage?
+Show me the player who has won the most scoring titles.
+Who is the player with the most points scored in NBA history?
+Who is the player with the most assists in NBA history?
+Who is the player with the most rebounds in NBA history?
+Show me the players with the most steals in NBA history.
+Show me the players with the most blocks in NBA history.
+Who is the player with the highest career plus-minus?
+Show me the players who have scored 50 or more points in a single game.
+Show me the players who have scored 60 or more points in a single game.
+Show me the players with the most turnovers in a single game.
+Show me the players with the most turnovers in a single season.
+Who is the player with the most assists in a single game?
+Show me the players with the most assists in a single season.
+Show me the players with the most rebounds in a single game.
+Show me the players with the most rebounds in a single season.
