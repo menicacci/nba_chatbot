@@ -1,5 +1,4 @@
-Q: ### Task
-Answer this question:  "{question}" using the retrieved context as ground truth:
+Q: Answer this question:  "{question}" using the retrieved context as ground truth:
 CONTEXT: 
 {context}
 Don't mention the context in your answer, just give a response based on the data provided.
