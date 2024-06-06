@@ -11,13 +11,13 @@ export class ChatComponent {
 
   messages: {sender: string, content: string}[] =
     [
-      { sender: SenderRoles.BOT,  content: 'Hello! How can I assist you today?' },
-      { sender: SenderRoles.USER, content: 'Hello, how are you?' },
-      { sender: SenderRoles.BOT,  content: "I'm doing well, thank you!" }
+      { sender: SenderRoles.BOT,  content: 'Hello! How can I assist you today?' }
     ];
 
   newMessage: string = '';
   inputActive: boolean = true;
+
+  chatName = "Chatbot"
 
   constructor(private apiService: ApiService) {}
 
