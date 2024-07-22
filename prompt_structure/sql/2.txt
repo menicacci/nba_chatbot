@@ -1,0 +1,11 @@
+### Task
+Generate a SQL query to answer [QUESTION]{question}[/QUESTION]
+
+### Instructions
+- If you cannot answer the question with the available database schema, return 'I do not know'
+
+### Database Schema
+This query will run on a database whose schema is represented here:
+{schema}
+
+Respond ONLY with the SQL query that answers [QUESTION]{question}[/QUESTION].
